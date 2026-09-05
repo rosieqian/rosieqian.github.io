@@ -26,7 +26,7 @@ nav a:hover, nav a:focus { color: var(--ink); }
 .section-border { border-top: 1px solid var(--line); }
 .hero { min-height: 82vh; display: grid; align-content: center; }
 .hero-grid, .split { display: grid; grid-template-columns: 1.3fr .8fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; }
-.eyebrow, .section-label, .skill-kicker, .credential-type, .learning-label, .mono { letter-spacing: .14em; text-transform: uppercase; font-size: .75rem; font-weight: 700; color: var(--accent); }
+.eyebrow, .section-label, .skill-kicker, .credential-type, .learning-label { letter-spacing: .14em; text-transform: uppercase; font-size: .75rem; font-weight: 700; color: var(--accent); }
 h1, h2, h3 { font-family: "Playfair Display", serif; line-height: 1.12; }
 h1 { max-width: 780px; margin: .7rem 0 1.4rem; font-size: clamp(3rem, 6vw, 6rem); }
 h1 em { color: var(--accent); }
@@ -38,8 +38,8 @@ h3 { margin: .7rem 0; font-size: 1.45rem; }
 .button.primary { background: var(--ink); color: white; }
 .button.secondary:hover { background: var(--cream); }
 .hero-panel { padding: 1.7rem; background: #282422; color: #f6eee8; box-shadow: 16px 16px 0 #dfd4ce; }
-.terminal-bar { display: flex; gap: .4rem; margin-bottom: 1.5rem; }
-.terminal-bar i { width: .7rem; height: .7rem; border-radius: 50%; background: #b79f94; }
+.panel-label { margin: 1.5rem 0 .25rem; color: #cab7ae; font-size: .72rem; font-weight: 700; letter-spacing: .16em; }
+.panel-label:first-child { margin-top: 0; }
 .hero-panel ul { padding-left: 1.2rem; color: #ddd0ca; }
 .quick-facts { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 5rem; border: 1px solid var(--line); }
 .quick-facts div { display: flex; gap: 1rem; padding: 1.2rem; border-right: 1px solid var(--line); }
@@ -75,9 +75,6 @@ h3 { margin: .7rem 0; font-size: 1.45rem; }
 .contact-links a { font-weight: 700; text-underline-offset: 4px; }
 .privacy-note { color: var(--muted); font-size: .85rem; }
 footer { width: min(var(--max), 90vw); margin: auto; padding: 2rem 0; display: flex; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
-.cursor { display: inline-block; width: .55rem; height: 1rem; background: #f6eee8; animation: blink 1s steps(1) infinite; }
-@keyframes blink { 50% { opacity: 0; } }
-
 @media (max-width: 760px) {
   .section { padding: 4rem 0; }
   .hero-grid, .split, .project-grid, .principle-grid { grid-template-columns: 1fr; }
